@@ -1,0 +1,3 @@
+[submodule "dashboard-frontend"]
+	path = dashboard-frontend
+	url = https://github.com/Smart-Experience-Sampling/dashboard-frontend
