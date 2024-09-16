@@ -1,0 +1,18 @@
+Table research {
+  research_id integer [primary key]
+  research_question text
+}
+
+Table clicker {
+  clicker_id integer [primary key]
+  clicker_user tinytext
+  clicker_research integer [ref: > research.research_id]
+}
+
+Table click {
+  click_id integer
+  clicker_id integer [ref: < clicker.clicker_id]
+  click_time timestamp
+  click_location_x integer
+  click_location_y integer
+}
