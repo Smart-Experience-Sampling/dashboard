@@ -1,0 +1,8 @@
+name: Smart-Sampling
+version: '3'
+
+services:
+    backend:
+      build:  ./backend
+      ports:
+        - "5000:5000"
