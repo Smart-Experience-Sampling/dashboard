@@ -10,9 +10,21 @@ Table clicker {
 }
 
 Table click {
-  click_id integer
+  click_id integer [primary key]
   clicker_id integer [ref: < clicker.clicker_id]
   click_time timestamp
   click_location_x integer
   click_location_y integer
+}
+
+Table user {
+  user_id integer [primary key]
+  user_username text
+  user_password text
+  user_role user_role
+}
+
+enum user_role {
+  Admin
+  User
 }
