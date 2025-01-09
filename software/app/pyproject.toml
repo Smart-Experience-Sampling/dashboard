@@ -8,3 +8,6 @@ dependencies = [
     "pillow>=11.1.0",
     "serial>=0.0.97",
 ]
+
+[tool.uv.workspace]
+members = ["umbra"]
